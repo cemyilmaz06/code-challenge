@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className="bg-light app">
-       {/* <AppRouter/> */}
+       <AppRouter/>
       {/* <Navbar/>
       <Main/>
       <About/>

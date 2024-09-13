@@ -21,7 +21,7 @@ const AppRouter = () => {
 <Route path="/New product" element={<NewProduct/>}/>
 <Route path="/Product List" element={<ProductCard/>}/>
 <Route path="/UpdateProduct" element={<ProductForm/>}/>
-<Route path="*" element={<NotFound/>}/>
+<Route path="*" element={<Main/>}/>
 
 
 
