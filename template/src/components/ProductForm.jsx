@@ -1,4 +1,6 @@
-const ProductForm = () => {
+const ProductForm = ({handleChange}) => {
+
+
   return (
     <article id="add-product" className="mb-4 mt-4">
       <h1 className="text-center">Product</h1>
@@ -7,7 +9,7 @@ const ProductForm = () => {
           <label htmlFor="add-name" className="form-label">
             Product Name
           </label>
-          <input type="text" className="form-control" id="add-name" required />
+          <input type="text" className="form-control" id="name" required onChange={handleChange}/>
         </div>
         <div className="mb-3">
           <label htmlFor="add-price" className="form-label">
@@ -16,8 +18,9 @@ const ProductForm = () => {
           <input
             type="number"
             className="form-control"
-            id="add-price"
+            id="price"
             required
+            onChange={handleChange}
           />
         </div>
         <div className="mb-3">
@@ -27,8 +30,9 @@ const ProductForm = () => {
           <input
             type="number"
             className="form-control"
-            id="add-quantity"
+            id="quantity"
             required
+            onChange={handleChange}
           />
         </div>
         <label htmlFor="add-image" className="form-label">
@@ -41,9 +45,10 @@ const ProductForm = () => {
           <input
             type="url"
             className="form-control"
-            id="add-image"
+            id="image"
             aria-describedby="basic-addon3"
             required
+            onChange={handleChange}
           />
         </div>
         <div className="text-center">
