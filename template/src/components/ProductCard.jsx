@@ -1,12 +1,12 @@
 import React from "react";
 
-const ProductCard = () => {
+const ProductCard = ({image,price,id,name,dampingRate,amount}) => {
   return (
     <div className="card shadow-lg mb-3">
       <div className="row g-0">
         <div className="col-md-5">
           <img
-            src={"image"}
+            src={image}
             className="w-100 h-100 rounded-start"
             alt={"name"}
             height="250px"

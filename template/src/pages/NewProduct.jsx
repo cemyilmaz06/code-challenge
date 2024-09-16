@@ -17,7 +17,7 @@ setFormData({...formData, [e.target.id]: e.target.value})
   }
   console.log(formData);
 
-  const handleSubmit=async (e)=>{
+  const handleSubmit=async(e)=>{
     e.prevent.default();
     await axios.post(
      "https://63f4e5583f99f5855db9e941.mockapi.io/products"

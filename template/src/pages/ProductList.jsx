@@ -13,15 +13,7 @@ const ProductList = () => {
 
   const getProducts=async()=>{
     try {
-      const data =await axios("https://63f4e5583f99f5855db9e941.mockapi.io/products"
-
-
-
-
-
-
-
-)
+      const data =await axios("https://63f4e5583f99f5855db9e941.mockapi.io/products")
       console.log(data);
       setProducts(data)
       setErrorState(false)
@@ -42,12 +34,12 @@ const ProductList = () => {
         <>
           <article id="product-panel" className="col-md-5">
             {products.map((product)=>(
-  <ProductCard />
+  <ProductCard {...products} key={product.id}/>
             ))}
           
           </article>
           <article className="col-md-5 m-3">
-            <CardTotal />
+            <CardTotal products={products} />
           </article>
         </>
 
