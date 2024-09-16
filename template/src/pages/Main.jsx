@@ -11,7 +11,7 @@ const Main = () => {
           <button className="btn btn-outline-primary px-4" onClick={()=>navigate("/New Product")}>
             Add New Product
           </button>
-          <button className="btn btn-primary px-4 ms-3"onClick={()=>navigate("/Procuct List")} >See Products</button>
+          <button className="btn btn-primary px-4 ms-3" onClick={()=>navigate("/Procuct List")} >See Products</button>
         </div>
       </div>
     </main>
